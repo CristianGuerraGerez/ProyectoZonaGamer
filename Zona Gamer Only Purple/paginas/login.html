@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zona Gamer/Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f47e.svg">
+</head>
+
+<body>
+  <nav>
+    <a href="../index.html" style="color: black;"><strong>&#10554;Volver a Inicio</strong></a>
+    <h3><u>¿Quieres ver otra cosa?</u></h3>
+  </nav>
+  <main>
+    <section class="d-flex justify-content-around formulario">
+      <article>
+        <div class="form-container">
+          <p class="title">Acceso</p>
+          <form class="form">
+            <div class="input-group">
+              <label for="username">Usuario</label>
+              <input type="text" name="username" id="username" placeholder="">
+            </div>
+            <div class="input-group">
+              <label for="password">Contraseña</label>
+              <input type="password" name="password" id="password" placeholder="">
+            </div>
+            <!-- Button trigger modal -->
+            <br>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              ¿Has olvidado tu contraseña?
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: black;">Restablece tu contraseña
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <ol style="color: black;">
+                      <li>
+
+                        <p>
+                        <ul>
+                          Sigue los pasos para recuperar tu cuenta. Se te harán algunas preguntas para confirmar que la
+                          cuenta te pertenece; además, recibirás un correo electrónico. Si no lo recibes, haz lo
+                          siguiente:
+                          <li>
+                            Revisa las carpetas de spam o de correo electrónico de distribución masiva.
+                          </li>
+                          <li>
+                            Agrega noreply@google.com a tu libreta de direcciones.
+                          </li>
+                          <li>
+                            Para solicitar otro correo electrónico, sigue los pasos para recuperar la cuenta .
+                          </li>
+                          <li>
+                            Verifica todas las direcciones de correo electrónico que podrías haber utilizado para
+                            registrarte o acceder a tu cuenta.
+                          </li>
+                        </ul>
+
+                        </p>
+                      </li>
+                      <li>
+                        <p>Elige una contraseña que no hayas utilizado con esta cuenta. Consulta cómo crear una
+                          contraseña segura.
+                        </p>
+                      </li>
+                    </ol>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar Cam</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="sign">Ingresar</button>
+          </form>
+          <div class="social-message">
+            <div class="line"></div>
+            <p class="message">Inicia sesion con ...</p>
+            <div class="line"></div>
+          </div>
+          <div class="social-icons">
+            <button aria-label="Log in with Google" class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
+                  <path
+                    d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z">
+                  </path>
+                </a>
+              </svg>
+            </button>
+            <button aria-label="Log in with Twitter" class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                <a href="http://www.twitter.com">
+                </a>
+                <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                  <path
+                    d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z">
+                  </path>
+                </a>
+              </svg>
+            </button>
+          </div>
+      </article>
+      <article class="imgFondo">
+        <img
+          src="../img/kisspng-playstation-4-playstation-3-game-controllers-gamer-5ac02463ee09f9.025069371522541667975.png"
+          alt="">
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="container-fluid">
+      <div class="row my-5">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <h2><u>Seguinos</u></h2>
+          <div class="icon">
+            <a href="./paginas/paginaerror.html" class="con btn btn-primary d-block m-5"
+              title="ir a instagram">Instagram
+              <img class="foo" src="../img/instagram.png" alt="">
+            </a>
+            <a href="./paginas/paginaerror.html" class="con btn btn-primary d-block m-5" title="ir a facebook">Facebook
+              <img class="foo" src="../img/face.png" alt="">
+            </a>
+            <a href="./paginas/paginaerror.html" class="con btn btn-primary d-block m-5" title="ir a youtube">Youtube
+              <img class="foo" src="../img/youtube.png" alt="">
+            </a>
+          </div>
+          <p>&#169;Derechos reservados por autor Only Purple SA</p>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><img id="logo"
+            src="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f47e.svg" alt=""> </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <h2><u>Terminos y condiciones</u></h2>
+          <p>Por favor lea estos términos y condiciones de uso cuidadosamente antes de utilizar estos sitios. Al usar el
+            sitio www.zonagamers.com usted manifiesta su aceptación de estos Términos de Uso y nuestro Aviso de
+            Privacidad. Si usted no acepta estos Términos y condiciones de Uso, por favor no utilice estos sitios.
+            Comparateca S.A.P.I. de C.V. (‘Comparateca’) se reserva el derecho, a nuestra discreción, de cambiar,
+            añadir, eliminar o modificar partes de estos Términos y condiciones de Uso en cualquier momento. Revise
+            estos términos y condiciones de uso periódicamente para los cambios. El uso continuado de estos sitios
+            después de la publicación de las modificaciones de estas condiciones de uso significa que usted acepta esos
+            cambios.</p>
+          <a href="./paginas/paginaerror.html" target="_blank" style="color: black;">ver mas...</a>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

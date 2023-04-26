@@ -1,0 +1,140 @@
+body{
+    padding: 15px;
+    background-image: linear-gradient(to right top, #845EC2, #C197FF, #714DAF, #00C9A7, #005B44);
+}
+.img{
+    display: flex;
+    padding: 0%;
+    width: 550px;
+    height: 330px;
+}
+.img img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .7;
+    transition: .6s ease;
+}
+#ima1{
+    border-radius: 0px 0px 0px 30px;
+}
+#ima2{
+    border-radius: 0px 0px 30px 0px;
+}
+.img img:hover{
+    cursor: crosshair;
+    width: 500px;
+    opacity: 1;
+    filter: contrast(125%);
+}
+nav{
+    border-radius: 20px 20px 0px 0px;
+}
+.navbar{
+    width:100%;
+    height: 60px;
+    background-color: rgba(100, 26, 170, 0.664);
+    
+}
+.col{
+    margin-top: 60px;
+}
+ul{
+    font-size: larger;
+}
+.card{
+    margin-bottom: 40px;
+    position:static;
+    margin-left: 100px;
+}
+.foo{
+    margin-left: 30px;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+}
+#logo{
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+}
+.search{
+    display: flex;
+    padding: 6px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+.search .textbox{
+    border: transparent;
+    width: 0px;
+    text-indent: 16px;
+    transition: 0.4s;
+    background: transparent;
+    border-radius: 50px;
+}
+.search:hover{
+    background: rgba(100, 26, 170, 0.664);
+    border: 1px solid black;
+}
+.search:hover .textbox{ 
+    width: 550px;
+    background: blueviolet;
+    color: white;
+}
+.search .icon{
+    border: 1px solid black;
+    pointer-events: none;
+    border-radius: 50px;
+    background: rgba(100, 26, 170, 0.664);
+    width: 180px;
+    height: 40px;
+    margin-left: 200px;
+}
+.icon :hover{
+    animation: shake 1.5s;
+}
+@keyframes shake{
+    10%{
+        transform: scale(1.2);
+    }
+}
+.con{
+    width: 200px;
+    background: rgba(100, 26, 170, 0.329)
+}
+.somos{
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+}
+.mar1{
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.mar2{
+    margin-left: 60px;
+    margin-top: 15px;
+}
+.sli{
+    margin-left: -12px;
+    width: 1343px;
+    height: 400px;
+    object-fit: cover;
+}
+.publicidad{
+    height: 400px;
+}
+.publi{
+    margin-left: -0px;
+    width: 200px;
+    height:auto;
+}
+
+.galeria{
+    width: 1200px;
+    height: 500px;
+    object-fit: cover;
+}
+.carrucel{
+    padding: 50px;
+}
